@@ -2,7 +2,7 @@
 <head><!-- titre -->
   
   <meta charset="utf-8"/> <!-- unicode balise meta -->
-  <title>Voila ma premiere page</title><!-- -->
+  <title>Page cours HTML</title><!-- -->
 
 </head>
   <body>
@@ -31,26 +31,43 @@
 		alors le navigateur affichera les titres en rouge. 
 		Le rôle du navigateur est donc essentiel !</p>
     
-	<h2>3- Les importances en HTML </h2>
-       <p> Bonjour,<br/>
-       C'est ici <em>que</em> ça se passe en italique avec  &lt;em&Gt;que&lt;/em&gt; !
-       mais <strong> pas </strong>là, en gras avec  &lt;strong&Gt; pas &lt;/strong&gt;!</p>
-       <p> Bonjour,
-       C'est ici que ça se passe après un saut de paragraphe avec &lt;p&gt;...&lt;/p&gt;!
-       mais pas là!</p>
+	<h2>3- Structure type d'un fichier HTML </h2>
+	  <p> &lt;!DOCTYPE html&gt;Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML.
+		  &lt;html&gt;balise principale du code. Elle englobe tout le contenu de votre page. 
+		  &lt;head&gt;cette section donne quelques informations générales sur la page comme son titre, l'encodage...
+			  &lt;meta charset="utf-8" /&gt;
+			  &lt;title&gt;Titre&lt;/title&gt;
+		  &lt;/head&gt;</p>
+
+	  <p> &lt;body&gt;c'est là que se trouve la partie principale de la page. 
+    	  &lt;/body&gt;
+		  &lt;/html&gt;</p>
+		
+	<h2>4- Les utilitaires </h2>
+	  <h3>4-1- Les paragraphes </h3>
+	    <p> &lt;p&gt; signifie « Début du paragraphe » ;
+		&lt;/p&gt; signifie « Fin du paragraphe ».</p>
+       
+	  <h3>4-2- Les importances en HTML </h3>
+	    <p> Bonjour,<br/>
+        C'est ici <em>que</em> ça se passe en italique avec  &lt;em&gt;que&lt;/em&gt; !
+        mais <strong> pas </strong>là, en gras avec  &lt;strong&gt; pas &lt;/strong&gt;!</p>
+        <p> Bonjour,
+        C'est ici que ça se passe après un saut de paragraphe avec &lt;p&gt;...&lt;/p&gt;!
+        mais pas là!</p>
 	   
-	<h2>4- Paragraphe sur le saut de ligne</h2>
-      <p>Il nous a dit <blockquote>pas le droit d'utiliser</blockquote> 
-      et 
-	  <blockquote>saut de ligne semantique</blockquote><hr/> et 
-	  enfin <blockquote>ni la ligne degeulasse</blockquote></p>
+	  <h3>4-3 Le saut de ligne</h3>
+        <p>Il nous a dit <blockquote>pas le droit d'utiliser</blockquote> 
+        et 
+	    <blockquote>saut de ligne semantique</blockquote><hr/> et 
+	    enfin <blockquote>ni la ligne degeulasse</blockquote></p>
     <h2>5- Citations</h2>
       <p> yeahhhhhhhhhhhhhhhhhhhhhh!<br />
       <mark>mais en surligné</mark></p> 
 	  <p><citation auteur="Neil Armstrong" date="21/07/1969">
 	  C'est un petit pas pour l'homme, mais un bond de géant pour l'humanité.
       </citation></p> 
-    <h2>5- Listes</h2>
+    <h2>6- Listes</h2>
       <p> J'aime les chats,
       liste ordonnee<ol> 
 					<li>gris </li>
@@ -67,15 +84,12 @@
 					<dt>minoux bleu</dt>
 					<dd>ceux qui sont bleu</dd></dl></p>
    
-    <h2>6- Echappement</h2>
-	  <p>&lt; &gt;
-	  &lt;  &gt; pour que ça soit compris comme du texte
-	        &amp; 
-      </p>
-   
-  <h4>Titre 4</h4>
-  <h5>Titre 5</h5>
-  <h6>Titre 6</h6>
+    <h2>7- Echappement</h2>
+	  <p>Permet d'afficher des chevrons &lt;  &gt; pour que ça soit compris comme du texte &amp; + soit lt ou gt</p>
+      <h3>7-1- Titre 3</h3>
+        <h4>7-1-1- Titre 4</h4>
+          <h5>7-1-1-1- Titre 5</h5>
+            <h6>7-1-1-1-1- Titre 6</h6>
   
 </body>
 </html>
