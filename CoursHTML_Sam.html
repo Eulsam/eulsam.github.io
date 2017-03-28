@@ -5,8 +5,8 @@
 </head>
 
 <body>
-  <header> <p>Bonjour et bienvenue!</p><!-- en head de la page -->
-  <h1 id="haut_de_la_page">Le cours de HTML et CSS</h1></header>
+  <header> <p id="haut_de_la_page">Bonjour et bienvenue!</p><!-- en head de la page -->
+  <h1 >Le cours de HTML et CSS</h1></header>
     
 	<section><h2 id="quoi">1- C'est quoi HTML et CSS?</h2>
       <p> <ul> <li>HTML (HyperText Markup Language) : il a fait son apparition dès 1991 lors du lancement du Web. 
@@ -108,20 +108,23 @@
 	  <h3>8-4- Les autre valeurs de target</h3>	
         <p>Cet attribut indique où afficher la ressource liée. Il s'agit du nom, ou du mot-clé, d'un contexte de navigation 
 		(par exemple, un onglet, une fenêtre, ou une &lt;iframe&gt;). Les mots-clés suivants ont un sens particulier :<ul>
-					<li>_self : charge la réponse dans le contexte de navigation courant. Il s'agit de la valeur par défaut quand l'attribut
-					n'est pas renseigné. </li>
-					<li>_parent : charge la réponse dans le &lt;frameset&gt; HTML4 parent de la frame courante ou dans le contexte de navigation 
-					HTML5 parent relativement au contexte courant). S'il n'y a pas de parent, l'option se comporte de la même façon que _self.</li>
-					<li>_top : En HTML4 : charge la réponse dans la fenêtre originale, annulant toutes les autres frames. 
-					En HTML5 : charge la réponse dans le contexte de navigation de plus haut niveau 
-					(c'est à dire, le contexte de navigation parent par rapport à l'actuel, et qui n'a lui-même aucun parent). 
-					S'il n'y a pas de parent, l'option se comporte de la même façon que _self.</li></ul></p>
+		<li>_self : charge la réponse dans le contexte de navigation courant. Il s'agit de la valeur par défaut quand l'attribut
+		n'est pas renseigné. </li>
+		<li>_parent : charge la réponse dans le &lt;frameset&gt; HTML4 parent de la frame courante ou dans le contexte de navigation 
+		HTML5 parent relativement au contexte courant). S'il n'y a pas de parent, l'option se comporte de la même façon que _self.</li>
+		<li>_top : En HTML4 : charge la réponse dans la fenêtre originale, annulant toutes les autres frames. 
+		En HTML5 : charge la réponse dans le contexte de navigation de plus haut niveau 
+		(c'est à dire, le contexte de navigation parent par rapport à l'actuel, et qui n'a lui-même aucun parent). 
+		S'il n'y a pas de parent, l'option se comporte de la même façon que _self.</li></ul></p>
 		
 	  
 	<h2 id="position">9- Position sur la page</h2>
 	  <p> Communication du positionnement avec le CSS</P>
+	  
 	  <p> &lt;header&gt; &lt;/header&gt; positionnement en haut de page </p>
+	  
 	  <p> &lt;nav&gt; &lt;/nav&gt; positionnement a gauche de la page </p></section>
+	  
 	  <nav> Sommaire :<ul><!-- en nav de la page (gauche)-->
 	    <li> <a href="#quoi">1- C'est quoi HTML et CSS?</a> </li>
 		<li> <a href="#faire">2- Faire un site</a> </li>
@@ -131,10 +134,15 @@
 		<li> <a href="#liste">6- Listes</a> </li>
 		<li> <a href="#echappement">7- Echappement</a> </li>
 		<li> <a href="#liens">8- Liens</a> </li>
-		<li> <a href="#position">9- Position sur la page</a> </li></ul></nav><section>
+		<li> <a href="#position">9- Position sur la page</a> </li>
+		<li> <a href="#image">10- Integration de l'image</a> </li>
+		<li> <a href="#formulaire">11- Formulaire</a> </li>
+		<li> <a href="#tableau">12- Tableau</a> </li>
+		<li> <a href="#css">13- Notion de bases de CSS</a> </li></ul></nav><section>
 	  <p> &lt;footer&gt; &lt;/footer&gt; positionnement en bas de la page </p>
 	  <p> &lt;section&gt; &lt;/section&gt; positionnement au centre de la page </p>
 	  <p> &lt;aside&gt; &lt;/aside&gt; positionnement au droite de la page </p></section>
+	  
 	  <aside> Dans cet article<ul><!-- en aside de la page (droite) -->
 	    <li> <a href="#quoi">C'est quoi HTML et CSS?</a> </li>
 		<li> <a href="#faire">Faire un site</a> </li>
@@ -144,7 +152,12 @@
 		<li> <a href="#liste">Listes</a> </li>
 		<li> <a href="#echappement">Echappement</a> </li>
 		<li> <a href="#liens">Liens</a> </li>
-		<li> <a href="#position">Position sur la page</a> </li></ul></aside><section>
+		<li> <a href="#position">Position sur la page</a> </li>
+		<li> <a href="#image">Integration de l'image</a> </li>
+		<li> <a href="#formulaire">Formulaire</a> </li>
+		<li> <a href="#tableau">Tableau</a> </li>
+		<li> <a href="#css">Notion de bases de CSS</a> </li></ul></aside><section>
+		
 	  <p> &lt;footer&gt; &lt;/footer&gt; positionnement en bas de la page </p>
 	  
 	<h2 id="image">10 Integration d'image</h2>
@@ -159,18 +172,120 @@
       &lt;img src="hockey.jpg" alt="Photo de hockey subaquatique" title="Photo de hockey subaquatique"/&gt;</p>
       <p>Pour mettre un titre en dessous de l'image on la fait apparaitre comme une figure avec les balises &lt;figure &gt; et &lt;figcaption &gt;</p>
        
-    <figure>
-    <img src="hockey.jpg" alt="Photo de hockey subaquatique" title="Photo de hockey subaquatique"/>
-    <figcaption>Photo de hockey subaquatique</figcaption>
-	</figure> 
+      <figure>
+      <img src="hockey.jpg" alt="Photo de hockey subaquatique" title="Photo de hockey subaquatique"/>
+      <figcaption>Photo de hockey subaquatique</figcaption>
+	  </figure> 
 	
-	  <h3>11-1- Titre 3</h3>
-        <h4>11-1-1- Titre 4</h4>
-          <h5>11-1-1-1- Titre 5</h5>
-            <h6>11-1-1-1-1- Titre 6</h6></section>
+	<h2 id="formulaire">11- Formulaires </h2>
+	
+	<h2 id="tableau">12- Les tableaux </h2>
+	  <p>Ensemble de lignes qui contiennent des cellules. Le tableau est formé de l'empilement des lignes</p>
+		
+		<p>Exemple</p><table>
+	      <tr>
+			<td>A</td>
+			<td>B</td>
+		  </tr>	
+		  <tr>
+			<td>C</td>
+			<td>D</td>
+		  </tr>
+		</table>	
+		
+	  <p>Début de tableau avec &lt;table&gt; , début de ligne avec &lt;Tr&gt; ,début de cellule avec &lt;Td&gt;</p>
+	  <p>--> Ligne d'entète avec &lt;Thead&gt; et la balise &lt;Th&gt;. Ligne de pied &lt;Tfoot&gt;, et la balise &lt;Th&gt;</p>
+	  <p>Exemple</p>
+	  <table>
+	    <caption> Mon tableau </caption>
+		<Thead>
+		  <th>  </th>
+		  <th> Nom </th>
+		  <th> Prenom </th>
+		</Thead>
+		<Tfoot>			
+		  <th></th>
+		  <th></th>
+		</Tfoot>
+	    <tr>
+		  <th>1 </th>
+		  <td>A</td>
+		  <td>B</td>
+		</tr>	
+		<tr>
+		  <th>2 </th>
+		  <td>C</td>
+		  <td>D</td>
+		</tr>
+	  </table>
+		 
+	    <p>--> Fusion de cellules avec des attributs de taille de cellule: cellule de 2 cases de large =&lt;Td rowspan="2"&gt;,
+		cellule de 2 cases de hauteur =&lt;Td colspan="2"&gt; </p>
+		<p>Exemple</p>
+		
+		<table>
+		<caption> Mon tableau avec mon pied de 2 cases de large</caption> 
+		  <Thead>
+		    <th></th>
+		    <th> Nom </th>
+			<th> Prenom </th>
+		  </Thead>
+		  <Tfoot>			
+			<th></th>
+			<th rowspan="2" colspan="2"> 2 cases de large </th>
+		  </Tfoot>
+	      <tr>
+		    <th>1 </th>
+			<td>A</td>
+			<td>B</td>
+		  </tr>	
+		  <tr>
+		    <th>2 </th>
+			<td>C</td>
+			<td>D</td>
+		  </tr>
+		 </table>
+	   <p>--> Pour mettre une légende en dessous du tableau  on la fait apparaitre avec les balises &lt;caption &gt;</p>
+       
+	   <p>Exemple: Groupe de colonnes</p>
+	   <table>
+	     <caption> Mon tableau colonnes groupées</caption>
+	     <colgroup>
+	       <col>
+	       <col span="2"/>
+	     </colgroup>
+	     <Thead>
+		    <th>  </th>
+		    <th> Nom </th>
+			<th> Prenom </th>
+		  </Thead>
+		  <Tfoot>			
+			<th></th>
+			<th></th>
+		  </Tfoot>
+	      <tr>
+		    <th>1 </th>
+			<td>A</td>
+			<td>B</td>
+		  </tr>	
+		  <tr>
+		    <th>2 </th>
+			<td>C</td>
+			<td>D</td>
+		  </tr>
+		 </table>	
+		
+	<h2 id="css">13- Notions de base de CSS </h2>
+	
+	
+	
+	  <h3>14-1- Titre 3</h3>
+        <h4>14-1-1- Titre 4</h4>
+          <h5>14-1-1-1- Titre 5</h5>
+            <h6>14-1-1-1-1- Titre 6</h6></section>
 			
 <footer> <p>Bas de la page</p><!-- en footer de la page -->
-  <p><a href="#haut_de_la_page"> Retour en haut de la page.</a> </p>
-      <h4>Merci Jean-Francois JUNG!</h4></footer> 
+<p><a href="#haut_de_la_page"> Retour en haut de la page.</a> </p>
+      <h4>Merci Jean-Francois JUNG.</h4></footer> 
 </body>
 </html>
