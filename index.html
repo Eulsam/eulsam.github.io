@@ -1,81 +1,481 @@
 <!DOCTYPE html>
-<head><!-- titre -->
-  
+<head> <!-- titre -->
   <meta charset="utf-8"/> <!-- unicode balise meta -->
-  <title>Voila ma premiere page</title><!-- -->
-
+  <title>Page cours HTML</title> <!-- -->
 </head>
-  <body>
-  <p>Bonjour et bienvenue!</p>
-  <h1>Le cours de HTML et CSS</h1>
+
+<body>
+  <header> 
+    <p id="haut_de_la_page"> Bonjour et bienvenue!
+    </p><!-- en head de la page -->
+    <h1>Le cours de HTML et CSS</h1>
+  </header>
     
-	<h2>1- C'est quoi HTML et CSS?</h2>
-      <p> <ul> <li>HTML (HyperText Markup Language) : il a fait son apparition dès 1991 lors du lancement du Web. 
-      Son rôle est de gérer et organiser le contenu. C'est donc en HTML que vous écrirez ce qui doit être affiché sur la page :
-      du texte, des liens, des images… Vous direz par exemple : « Ceci est mon titre, ceci est mon menu, voici le texte principal de la page, 
-      voici une image à afficher, etc. ».  </li> </p>
-      <p> <li>CSS (Cascading Style Sheets, aussi appelées Feuilles de style) : le rôle du CSS est de gérer 
-      l'apparence de la page web (agencement, positionnement, décoration, couleurs, taille du texte…).
-      Ce langage est venu compléter le HTML en 1996.</li> </ul></p>
+  <section>
+    <h2 id="quoi"> 1- C'est quoi HTML et CSS?</h2>
+      <ul> 
+        <li>HTML (HyperText Markup Language) :    a fait son apparition dès 1991 lors du lancement du Web. 
+           Son rôle est de gérer et organiser le contenu. C'est donc en HTML que vous écrirez ce qui doit être affiché sur la page :
+           du texte, des liens, des images… Vous direz par exemple : « Ceci est mon titre, ceci est mon menu, voici le texte principal de la page, 
+            voici une image à afficher, etc. ».  
+         </li>
+         <li>CSS (Cascading Style Sheets, aussi appelées Feu  les de style) : le rôle du CSS est de gérer 
+            l'apparence de la page web (agencement, positionnement, décoration, couleurs, ta  le du texte…).
+            Ce langage est venu compléter le HTML en 1996.
+         </li> 
+      </ul>
      
-	<h2>2- Faire un site</h2>
-	  <h3>2-1- Ecrire </h3>
-	    <p>Les éditeurs de texte : ce sont des programmes dédiés à l'écriture de code.
-	    On peut en général les utiliser pour de multiples langages,
-	    pas seulement HTML et CSS. On pourra utiliser notament notepad++ et enregistrer le document en .html </p>
-	  <h3>2-2- Lire </h3>
-		<p>Le navigateur est le programme qui nous permet de voir 
-		les sites web.Le travail du navigateur est de 
-		lire le code HTML et CSS pour afficher un résultat visuel à l'écran. 
-		Si votre code CSS dit « Les titres sont en rouge »,
-		alors le navigateur affichera les titres en rouge. 
-		Le rôle du navigateur est donc essentiel !</p>
+    <h2 id="faire">2- Faire un site</h2>
+      <h3>2-1- Ecrire </h3>
+        <p>Les éditeurs de texte : ce sont des programmes dédiés à l'écriture de code.
+          On peut en général les ut  iser pour de multiples langages,
+          pas seulement HTML et CSS. On pourra ut  iser notament notepad++ et enregistrer le document en .html 
+        </p>
+      <h3>2-2- Lire </h3>
+        <p>Le navigateur est le programme qui nous permet de voir 
+          les sites web.Le trava   du navigateur est de 
+          lire le code HTML et CSS pour afficher un résultat visuel à l'écran. 
+          Si votre code CSS dit « Les titres sont en rouge »,
+          alors le navigateur affichera les titres en rouge. 
+          Le rôle du navigateur est donc essentiel !
+        </p>
     
-	<h2>3- Les importances en HTML </h2>
-       <p> Bonjour,<br/>
-       C'est ici <em>que</em> ça se passe en italique avec  &lt;em&Gt;que&lt;/em&gt; !
-       mais <strong> pas </strong>là, en gras avec  &lt;strong&Gt; pas &lt;/strong&gt;!</p>
-       <p> Bonjour,
-       C'est ici que ça se passe après un saut de paragraphe avec &lt;p&gt;...&lt;/p&gt;!
-       mais pas là!</p>
-	   
-	<h2>4- Paragraphe sur le saut de ligne</h2>
-      <p>Il nous a dit <blockquote>pas le droit d'utiliser</blockquote> 
-      et 
-	  <blockquote>saut de ligne semantique</blockquote><hr/> et 
-	  enfin <blockquote>ni la ligne degeulasse</blockquote></p>
-    <h2>5- Citations</h2>
-      <p> yeahhhhhhhhhhhhhhhhhhhhhh!<br />
-      <mark>mais en surligné</mark></p> 
-	  <p><citation auteur="Neil Armstrong" date="21/07/1969">
-	  C'est un petit pas pour l'homme, mais un bond de géant pour l'humanité.
-      </citation></p> 
-    <h2>5- Listes</h2>
-      <p> J'aime les chats,
-      liste ordonnee<ol> 
-					<li>gris </li>
-					<li>vert </li>
-					<li>bleu</li> </ol>
-   
-   
-      liste desordonnee<ul>
-					<li>gris </li>
-					<li>vert </li>
-					<li>bleu</li></ul>
-					
-      Liste de definition <dl>
-					<dt>minoux bleu</dt>
-					<dd>ceux qui sont bleu</dd></dl></p>
-   
-    <h2>6- Echappement</h2>
-	  <p>&lt; &gt;
-	  &lt;  &gt; pour que ça soit compris comme du texte
-	        &amp; 
+    <h2 id="structure_type"> 3- Structure type d'un fichier HTML </h2>
+      <p> &lt;!DOCTYPE html&gt;Elle est indispensable car c'est elle qui indique qu'   s'agit bien d'une page web HTML.
+        &lt;html&gt;balise principale du code. Elle englobe tout le contenu de votre page. 
       </p>
+      <p> &lt;head&gt;cette section donne quelques informations générales sur la page comme son titre, l'encodage...
+        &lt;meta charset="utf-8" /&gt;
+        &lt;title&gt;Titre&lt;/title&gt;
+        &lt;/head&gt;
+      </p>
+      <p> &lt;body&gt;c'est là que se trouve la partie principale de la page. 
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </p>
+        
+    <h2 id="utilitaire">4- Les utilitaires </h2>
+      <h3>4-1- Les paragraphes </h3>
+        <p> &lt;p&gt; signifie « Début du paragraphe » ;
+          &lt;/p&gt; signifie « Fin du paragraphe ».
+        </p>
+       
+      <h3>4-2- Les importances en HTML </h3>
+        <p> Bonjour,<br/>
+          <em>en italique</em>  avec  &lt;em&gt;que&lt;/em&gt;!
+          <strong> en gras </strong> là, en gras avec  &lt;strong&gt; pas &lt;/strong&gt;!
+        </p>
+       
+      <h3>4-3 Le saut de ligne</h3>
+        <p>On nous a dit pas le droit d'utiliser &lt;blockquote&gt;. 
+          vaut mieux gérer avec les debuts et fins de paragraphes.
+        </p>
+    
+    <h2 id="citation">5- Citations</h2>
+      <p> yeahhhhhhhhhhhhhhhhhhhhhh!<br/>
+        <mark>mais en surligné</mark> avec &lt;mark&gt;
+      </p> 
+      
+    <h2 id="liste">6- Listes</h2>
+    <p>J'aime les chats, dans différents type de liste :</p>
+      <ul>
+        <li>Liste ordonnee avec &lt;ol&gt;
+          <ol> 
+            <li>gris avec &lt;li&gt; </li> 
+            <li>vert</li>
+            <li>bleu</li> 
+          </ol>
+        </li>
+      
+        <li>Liste desordonnee avec &lt;ul&gt;
+         <ul>
+           <li>gris avec &lt;li&gt;
+           </li>
+           <li>vert 
+           </li>
+           <li>bleu  
+           </li>
+         </ul>
+        </li>
+                    
+        <li>
+         <dl>Liste de definition avec &lt;dl&gt;
+           <dt>minoux bleu avec &lt;dt&gt;
+           </dt>
+           <dd>ceux qui sont bleu avec &lt;dd&gt;
+           </dd>
+           <dt>minoux vert
+           </dt>
+           <dd>ceux qui sont vert
+           </dd>
+           <dt>minoux gris
+           </dt>
+           <dd>ceux qui sont gris
+           </dd>
+         </dl>
+       </li>
+     </ul>
    
-  <h4>Titre 4</h4>
-  <h5>Titre 5</h5>
-  <h6>Titre 6</h6>
+    <h2 id="echappement">7- Echappement</h2>
+      <p>Permet d'afficher des chevrons &lt;  &gt; pour que ça soit compris comme du texte avec &amp;lt; et &amp;gt;
+      </p>
+      
+    <h2 id="liens">8- Liens</h2>
+      <h3>8-1- Nomenclature</h3>
+        &lt;a href='lien.html'&gt; lien vers l'autre fichier &lt;/a&gt;
+        <p>
+          <a href='lien.html'> lien vers l autre fichier 
+          </a> 
+        </p>
+        <p>
+          <a href='liens/lien_second.html'> lien vers l autre fichier 
+          </a> 
+        </p>
+        <p>
+          <a href='../lien_second.html'> lien vers le repertoire parent
+          </a> 
+        </p>
+        <p>
+          <a href='https://developer.mozilla.org/fr/docs/Web/HTML'> lien vers un site d'aide 
+          </a> 
+        </p>
+    
+      <h3>8-2- Les ancres</h3>
+      
+        <p>Les liens permettent d'amener vers d'autres endroits sur la même page. 
+          faut créer une ancre avec l'attribut id &lt;h2 id="lapin"&gt; pour « marquer » un endroit dans la page, 
+          puis faire un lien vers l'ancre comme ceci : &lt;a href="#page2.html#lapin"&gt;. 
+        </p>
+    
+      <h3>8-3- Un lien qui ouvre un nouvel onglet</h3>
+        <p>Comment ouvrir un lien dans un nouvelle onglet une info purement technique
+          est possible de « forcer » l'ouverture d'un lien dans une nouvelle fenêtre.
+          Pour cela, on rajoutera target="_blank" à la balise &lt;a&gt;:
+        </p>
+        <p>ex : &lt;a href='https://www.google.fr' target='_blank'&gt; Ouverture nouvelle page! &lt;/a&gt;
+        </p>
+        <p>
+          <a href='https://www.google.fr' target='_blank'> Ouverture nouvelle page! 
+          </a>
+        </p>
+    
+    
+      <h3>8-4- Les autre valeurs de target</h3> 
+      
+        <ul>Cet attribut indique où afficher la ressource liée. Il s'agit du nom, ou du mot-clé, d'un contexte de navigation 
+          (par exemple, un onglet, une fenêtre, ou une &lt;iframe&gt;). Les mots-clés suivants ont un sens particulier :
+          
+          <li>_self : charge la réponse dans le contexte de navigation courant. Il s'agit de la valeur par défaut quand l'attribut
+            n'est pas renseigné. 
+          </li>
+          <li>_parent : charge la réponse dans le &lt;frameset&gt; HTML4 parent de la frame courante ou dans le contexte de navigation 
+            HTML5 parent relativement au contexte courant). S'il n'y a pas de parent, l'option se comporte de la même façon que _self.
+          </li>
+          <li>_top : En HTML4 : charge la réponse dans la fenêtre originale, annulant toutes les autres frames. 
+            En HTML5 : charge la réponse dans le contexte de navigation de plus haut niveau 
+            (c'est à dire, le contexte de navigation parent par rapport à l'actuel, et qui n'a lui-même aucun parent). 
+            S'il n'y a pas de parent, l'option se comporte de la même façon que _self.
+          </li>
+        </ul>
+        
+        
+      
+    <h2 id="position">9- Position sur la page</h2>
+      <p> Communication du positionnement avec le CSS
+      </P>
+      <p> &lt;header&gt; &lt;/header&gt; positionnement en haut de page 
+      </p>
+      <p> &lt;nav&gt; &lt;/nav&gt; positionnement a gauche de la page 
+      </p>
+</section>
+      
+<nav> Sommaire :
+  <ul><!-- en nav de la page (gauche)-->
+    <li> 
+      <a href="#quoi">1- C'est quoi HTML et CSS?
+      </a> 
+    </li>
+    <li> 
+      <a href="#faire">2- Faire un site
+      </a> 
+    </li>
+    <li> 
+      <a href="#structure_type">3- Structure type d'un fichier HTML
+      </a> 
+    </li>
+    <li> 
+      <a href="#utilitaire">4- Les utilitaires
+      </a> 
+    </li>
+    <li>
+      <a href="#citation">5- Citations
+      </a> 
+    </li>
+    <li> 
+      <a href="#liste">6- Listes
+      </a> 
+    </li>
+    <li> 
+      <a href="#echappement">7- Echappement
+      </a> 
+    </li>
+    <li>
+      <a href="#liens">8- Liens
+      </a> 
+    </li>
+    <li>
+      <a href="#position">9- Position sur la page
+      </a> 
+    </li>
+    <li> 
+      <a href="#image">10- Integration de l'image
+      </a> 
+    </li>
+    <li> 
+      <a href="#formulaire">11- Formulaire
+      </a> 
+    </li>
+    <li> 
+      <a href="#tableau">12- Tableau
+      </a> 
+    </li>
+    <li> 
+      <a href="#css">13- Notion de bases de CSS
+      </a> 
+    </li>
+  </ul>
+</nav>
+        
+<section>
+  <p> &lt;footer&gt; &lt;/footer&gt; positionnement en bas de la page 
+  </p>
+  <p> &lt;section&gt; &lt;/section&gt; positionnement au centre de la page 
+  </p>
+  <p> &lt;aside&gt; &lt;/aside&gt; positionnement au droite de la page 
+  </p>
+</section>
+      
+<aside> Dans cet article
+  <ul><!-- en aside de la page (droite) -->
+    <li>
+      <a href="#quoi">C'est quoi HTML et CSS?
+      </a> 
+    </li>
+    <li> 
+      <a href="#faire">Faire un site
+      </a> 
+    </li>
+    <li> 
+      <a href="#structure_type">Structure type d'un fichier HTML
+      </a> 
+    </li>
+    <li> 
+      <a href="#utilitaire">Les utilitaires
+      </a> 
+    </li>
+    <li> 
+      <a href="#citation">Citations
+      </a> 
+    </li>
+    <li> 
+      <a href="#liste">Listes
+      </a> 
+    </li>
+    <li> 
+      <a href="#echappement">Echappement
+      </a> 
+    </li>
+    <li> 
+      <a href="#liens">Liens
+      </a> 
+    </li>
+    <li> 
+      <a href="#position">Position sur la page
+      </a> 
+    </li>
+    <li> 
+      <a href="#image">Integration de l'image
+      </a> 
+    </li>
+    <li> 
+      <a href="#formulaire">Formulaire
+      </a> 
+    </li>
+    <li> 
+      <a href="#tableau">Tableau
+      </a> 
+    </li>
+    <li> 
+      <a href="#css">Notion de bases de CSS
+      </a> 
+    </li>
+  </ul>
+</aside>
+
+<section>
+  <p> &lt;footer&gt; &lt;/footer&gt; positionnement en bas de la page 
+  </p>
+      
+  <h2 id="image">10 Integration d'image</h2>
+
+  <p>Pour integrer une image,la balise est de type orpheline <img />
+      La balise doit être accompagnée de deux attributs obligatoires :
+      src= : il permet d'indiquer où se trouve l'image que l'on veut insérer. Vous pouvez soit mettre un chemin absolu (ex. :  http://www.site.com/fleur.png), soit mettre le chemin en relatif (ce qu'on fait le plus souvent). Ainsi, si votre image est dans un sous-dossier  images, vous devrez taper :  src="images/fleur.png"
+      alt= : cela signifie « texte alternatif ». On doit toujours indiquer un texte alternatif à l'image, c'est-à-dire un court texte qui décrit ce que contient l'image. Ce texte sera affiché à la place de l'image si celle-ci ne peut pas être téléchargée (cela arrive), ou dans les navigateurs de personnes handicapées (non-voyants) qui ne peuvent malheureusement pas « voir » l'image. Cela aide aussi les robots des moteurs de recherche pour les recherches d'images. Pour la fleur, on mettrait par exemple :  alt="Une fleur".
+      Les images doivent se trouver obligatoirement à l'intérieur d'un paragraphe. 
+      L'attribut permettant d'afficher une bulle d'aide est le même que pour les liens : il s'agit de  title.
+  </p> 
+  <p>Voici un exemple d'insertion d'image :
+      &lt;img src="hockey.jpg" alt="Photo de hockey subaquatique" title="Photo de hockey subaquatique"/&gt;
+  </p>
+  <p>Pour mettre un titre en dessous de l'image on la fait apparaitre comme une figure avec les balises &lt;figure &gt; et &lt;figcaption &gt;
+  </p>
+       
+  <figure>
+    <img src="hockey.jpg" alt="Photo de hockey subaquatique" title="Photo de hockey subaquatique"/>
+    <figcaption>Photo de hockey subaquatique</figcaption>
+  </figure> 
   
+  <h2 id="formulaire">11- Formulaires</h2>
+  
+  <h2 id="tableau">12- Les tableaux</h2>
+  
+  <p>Ensemble de lignes qui contiennent des cellules. Le tableau est formé de l'empilement des lignes
+  </p>        
+  <p>Exemple
+  </p>
+  <table>
+    <tr>
+      <td>A</td>
+      <td>B</td>
+    </tr> 
+    <tr>
+      <td>C</td>
+      <td>D</td>
+    </tr>
+  </table>    
+        
+  <p>Début de tableau avec &lt;table&gt; , début de ligne avec &lt;Tr&gt; ,début de cellule avec &lt;Td&gt;
+  </p>
+  <p>--> Ligne d'entète avec &lt;Thead&gt; et la balise &lt;Th&gt;. Ligne de pied &lt;Tfoot&gt;, et la balise &lt;Th&gt;
+  </p>
+  <p>Exemple
+  </p>
+  <table>
+    <caption> Mon tableau 
+    </caption>
+    <Thead>
+      <tr>
+        <th>  </th>
+        <th> Nom </th>
+        <th> Prenom </th>
+      </tr>
+    </Thead>
+    <Tfoot> 
+      <tr>        
+        <th></th>
+        <th></th>
+      </tr>
+    </Tfoot>
+      <tr>
+        <th>1 </th>
+        <td>A</td>
+        <td>B</td>
+      </tr>   
+      <tr>
+        <th>2 </th>
+        <td>C</td>
+        <td>D</td>
+      </tr>
+  </table>
+         
+  <p>--> Fusion de cellules avec des attributs de taille de cellule: cellule de 2 cases de large =&lt;Td rowspan="2"&gt;,
+    cellule de 2 cases de hauteur =&lt;Td colspan="2"&gt; 
+  </p>
+  <p>Exemple
+  </p>
+       
+  <table>
+    <caption> Mon tableau avec mon pied de 2 cases de large
+    </caption> 
+       <Thead>
+         <tr>
+           <th></th>
+           <th> Nom </th>
+           <th> Prenom </th>
+         </tr>
+      </Thead>
+      <Tfoot> 
+        <tr>          
+          <th></th>
+          <th rowspan="2" colspan="2"> 2 cases de large </th>
+        </tr>
+      </Tfoot>
+        <tr>
+          <th>1 </th>
+          <td>A</td>
+          <td>B</td>
+        </tr> 
+        <tr>
+          <th>2 </th>
+          <td>C</td>
+          <td>D</td>
+        </tr>
+  </table>
+  <p>--> Pour mettre une légende en dessous du tableau,  on la fait apparaitre avec les balises &lt;caption &gt;
+  </p>
+       
+  <p>Exemple: Groupe de colonnes
+  </p>
+  <table>
+    <caption> Mon tableau colonnes groupées
+    </caption>
+    <colgroup>
+      <col>
+      <col span="2"/>
+    </colgroup>
+    <Thead>
+      <tr>
+        <th>  </th>
+        <th> Nom </th>
+        <th> Prenom </th>
+      </tr>
+    </Thead>
+    <Tfoot> 
+      <tr>          
+        <th></th>
+        <th></th>
+      </tr>
+    </Tfoot>
+      <tr>
+        <th>1 </th>
+        <td>A</td>
+        <td>B</td>
+      </tr> 
+      <tr>
+        <th>2 </th>
+        <td>C</td>
+        <td>D</td>
+      </tr>
+  </table>   
+        
+  <h2 id="css">13- Notions de base de CSS </h2>
+    
+    
+    
+      <h3>14-1- Titre 3</h3>
+        <h4>14-1-1- Titre 4</h4>
+          <h5>14-1-1-1- Titre 5</h5>
+            <h6>14-1-1-1-1- Titre 6</h6></section>
+            
+<footer> 
+  <p>Bas de la page
+  </p><!-- en footer de la page -->
+  <p>
+    <a href="#haut_de_la_page"> Retour en haut de la page.
+    </a> 
+  </p>
+  <h4>Merci Jean-Francois JUNG.</h4>
+</footer> 
 </body>
 </html>
