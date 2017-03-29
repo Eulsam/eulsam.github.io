@@ -25,6 +25,7 @@
 }
 
 .aside{/* Carre */
+  
   width: 280px;
   height: auto;
   text-align: left;
@@ -32,7 +33,8 @@
   padding-top: 20px;
   border-radius: 5px;
   color : black;
-  background-color : Tomato; position: absolute; 
+  background-color : Tomato; 
+  position: absolute; 
   top : 150px;
   left: 1210px; 
 }
@@ -44,7 +46,7 @@
   padding-top: 20px;
   border-radius: 5px;
   color : black;
-  background-color : DarkOrchid; 
+  background-color : MistyRose; 
   position: absolute; 
   top : 150px;
   
@@ -57,7 +59,7 @@
   padding-top: 20px;
   border-radius: 10px;
   color : black;
-  background-color : MistyRose;
+  background-color : DarkOrchid;
   position: absolute; 
   top : 620px;
   left: 1280px; 
