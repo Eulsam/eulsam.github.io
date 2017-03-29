@@ -1,0 +1,46 @@
+.carre{/* Carre */
+  height:150px;
+  width:150px;
+  display : inline-block;
+  /* mettre en ligne c"est tres important */
+  border-radius: 10px;
+  border-style: dotted solid;
+}
+.vert{
+  background-color : #00ff00; /* Class vert */
+   position: relative; 
+   top: 20px; 
+   left: -20px; 
+   border: 25px tomato solid;
+}
+
+.rouge{
+  background-color : #ff0000;/* Class vert */
+  border: 5px black double;
+  padding: 50px;
+  margin: 25px;  
+}
+
+.bleu{
+  background-color : #0000ff;  /* Class vert */
+}
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100px 100px 100px;
+  border-color: transparent transparent #007bff transparent;
+}
+/* position
+Valeurs avec un mot-clé
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;
+
+Valeurs globales
+position: inherit;
+position: initial;
+position: unset;*/
