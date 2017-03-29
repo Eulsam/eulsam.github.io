@@ -1,0 +1,25 @@
+.carre{/* Carre */
+  height:150px;
+  width:150px;
+  display : inline-block;
+  /* mettre en ligne c"est tres important */
+  border-radius: 75px;
+
+}
+.vert{
+  background-color : #00ff00; /* Class vert */
+  position: absolute; 
+  top: 28px; 
+  left: 32px; 
+}
+
+.rouge{
+  background-color : #ff0000;/* Class vert */
+  }
+
+.bleu{
+  background-color : #0000ff;
+  position: absolute; 
+  top: 48px; 
+  left: 56px;  /* Class vert */
+}

@@ -1,0 +1,68 @@
+.sections{/* Carre */
+  width: 900px;
+  height: 550px;
+  display : block;
+  text-align: left;
+  font-size: 16px;
+  padding-top: 20px;
+  border-radius: 5px;
+  color : black;
+  background-color : GreenYellow;
+  position: absolute; 
+  top : 150px;
+  left: 300px; 
+  overflow : scroll;
+}
+.header{/* Carre */
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 20px;
+  border-radius: 10px;
+  color : black;
+  background-color : DeepPink;
+}
+
+.aside{/* Carre */
+  width: 280px;
+  height: auto;
+  text-align: left;
+  font-size: 16px;
+  padding-top: 20px;
+  border-radius: 5px;
+  color : black;
+  background-color : Tomato; position: absolute; 
+  top : 150px;
+  left: 1210px; 
+}
+.nav{/* Carre */
+  width: 280px;
+  height: auto;
+  text-align: left;
+  font-size: 16px;
+  padding-top: 20px;
+  border-radius: 5px;
+  color : black;
+  background-color : DarkOrchid; 
+  position: absolute; 
+  top : 150px;
+  
+}
+.footer{/* Carre */
+  width: 1503;
+  height: auto;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 20px;
+  border-radius: 10px;
+  color : black;
+  background-color : MistyRose;
+  position: absolute; 
+  top : 620px;
+  left: 1280px; 
+}
+.fond{/* Carre */
+  
+  background-color : LightSlateGray;
+}
