@@ -12,13 +12,13 @@
     <section class="section">
     <h2 id="quoi"> 1- C'est quoi HTML et CSS?</h2>
       <ul> 
-        <li>HTML (HyperText Markup Language) :    a fait son apparition dès 1991 lors du lancement du Web. 
+        <li>HTML (HyperText Markup Language) :  il  a fait son apparition dès 1991 lors du lancement du Web. 
            Son rôle est de gérer et organiser le contenu. C'est donc en HTML que vous écrirez ce qui doit être affiché sur la page :
            du texte, des liens, des images… Vous direz par exemple : « Ceci est mon titre, ceci est mon menu, voici le texte principal de la page, 
             voici une image à afficher, etc. ».  
          </li>
          <li>CSS (Cascading Style Sheets, aussi appelées Feu  les de style) : le rôle du CSS est de gérer 
-            l'apparence de la page web (agencement, positionnement, décoration, couleurs, ta  le du texte…).
+            l'apparence de la page web (agencement, positionnement, décoration, couleurs, taille du texte…).
             Ce langage est venu compléter le HTML en 1996.
          </li> 
       </ul>
@@ -26,12 +26,12 @@
     <h2 id="faire">2- Faire un site</h2>
       <h3>2-1- Ecrire </h3>
         <p>Les éditeurs de texte : ce sont des programmes dédiés à l'écriture de code.
-          On peut en général les ut  iser pour de multiples langages,
-          pas seulement HTML et CSS. On pourra ut  iser notament notepad++ et enregistrer le document en .html 
+          On peut en général les utiliser pour de multiples langages,
+          pas seulement HTML et CSS. On pourra utiliser notament notepad++ et enregistrer le document en .html 
         </p>
       <h3>2-2- Lire </h3>
         <p>Le navigateur est le programme qui nous permet de voir 
-          les sites web.Le trava   du navigateur est de 
+          les sites web.Le travail du navigateur est de 
           lire le code HTML et CSS pour afficher un résultat visuel à l'écran. 
           Si votre code CSS dit « Les titres sont en rouge »,
           alors le navigateur affichera les titres en rouge. 
@@ -39,18 +39,18 @@
         </p>
     
     <h2 id="structure_type"> 3- Structure type d'un fichier HTML </h2>
-      <p> &lt;!DOCTYPE html&gt;Elle est indispensable car c'est elle qui indique qu'   s'agit bien d'une page web HTML.
-        &lt;html&gt;balise principale du code. Elle englobe tout le contenu de votre page. 
-      </p>
-      <p> &lt;head&gt;cette section donne quelques informations générales sur la page comme son titre, l'encodage...
-        &lt;meta charset="utf-8" /&gt;
-        &lt;title&gt;Titre&lt;/title&gt;
-        &lt;/head&gt;
-      </p>
-      <p> &lt;body&gt;c'est là que se trouve la partie principale de la page. 
-        &lt;/body&gt;
-        &lt;/html&gt;
-      </p>
+      <p> &lt;!DOCTYPE html&gt;Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML.</p>
+      <p> &lt;html&gt;balise principale du code. Elle englobe tout le contenu de votre page. </p>
+      
+      <p> &lt;head&gt;cette section donne quelques informations générales sur la page comme son titre, l'encodage...</p>
+      <p> &lt;meta charset="utf-8" /&gt;</p>
+      <p> &lt;title&gt;Titre&lt;/title&gt;</p>
+      <p> &lt;/head&gt;</p>
+      
+      <p> &lt;body&gt;c'est là que se trouve la partie principale de la page. </p>
+      <p>  &lt;/body&gt;</p>
+      <p>  &lt;/html&gt; fin du fichier</p>
+      
         
     <h2 id="utilitaire">4- Les utilitaires </h2>
       <h3>4-1- Les paragraphes </h3>
@@ -60,8 +60,8 @@
        
       <h3>4-2- Les importances en HTML </h3>
         <p> Bonjour,<br/>
-          <em>en italique</em>  avec  &lt;em&gt;que&lt;/em&gt;!
-          <strong> en gras </strong> là, en gras avec  &lt;strong&gt; pas &lt;/strong&gt;!
+          <em>en italique</em>  avec  &lt;em&gt;en italique&lt;/em&gt;!
+          <strong> en gras </strong> là, en gras avec  &lt;strong&gt; en gras &lt;/strong&gt;!
         </p>
        
       <h3>4-3 Le saut de ligne</h3>
@@ -206,9 +206,8 @@
     <li>GIF : similaire au PNG, plus limité en nombre de couleurs mais qui peut être animé.</li>
   </ul>
   
-  <h2 id="formulaire">11- Formulaires</h2>
   
-  <h2 id="tableau">12- Les tableaux</h2>
+  <h2 id="tableau">11- Les tableaux</h2>
   
   <p>Ensemble de lignes qui contiennent des cellules. 
   Le tableau est formé de l'empilement des lignes</p>        
@@ -322,9 +321,72 @@
       </tr>
   </table>   
         
-  <h2 id="css">13- Notions de base de CSS </h2>
+  <h2 id="css">12- Notions de base de CSS </h2>
+  
+  <p>CSS est un autre langage qui vient compléter le HTML. Son rôle est de mettre en forme votre page web. Il faut être vigilant sur
+    la compatibilité des navigateurs avec certaines fonctionnalités récentes de CSS3. Quand un navigateur ne connaît pas une instruction 
+    de mise en forme, il l'ignore simplement.
+    On peut écrire le code CSS à plusieurs endroits différents, le plus conseillé étant de créer un fichier séparé portant l'extension .css 
+    (exemple : style.css).</p>
+  <p>En CSS, on sélectionne quelles portions de la page HTML on veut modifier et on change leur présentation avec des propriétés CSS :
+    balise1
+    {
+    propriete1: valeur1;
+    propriete2: valeur2;
+    }</p>
+  <p>Il existe de nombreuses façons de sélectionner la portion de la page que l'on veut mettre en forme.</p>
+    <ul> Par exemple, on peut viser :
+      <li>toutes les balises d'un même type, en écrivant simplement leur nom (h1 par exemple)</li>
+      <li>certaines balises spécifiques, auxquelles on a donné des noms à l'aide des attributs class ou id (.nomclasse ou #nomid)</li>
+      <li>uniquement les balises qui se trouvent à l'intérieur d'autres balises (h3 em).</li>
+    </ul>
     
-    <h3 id="selecteur"> 13-1- Les selecteurs </h3>
+    
+    <h3> 12-1- Formatage du texte </h3>
+   
+      <p>On modifie la taille du texte avec la propriété CSS font-size. On peut indiquer la taille en pixels (16px), en « em » (1.3em),
+        en pourcentage (110%), etc.</p>
+      <p>On change la police du texte avec font-family. De nombreuses propriétés de mise en forme du texte existent : font-style pour l'italique, 
+        font-weight pour la mise en gras, text-decoration pour le soulignement, etc. Le texte peut être aligné avec text-align.</p>
+        
+     <h3> 12-2- Les couleurs </h3>
+     
+        <p>On change la couleur du texte avec la propriété color, la couleur de fond avec background-color.
+          On peut indiquer une couleur en écrivant son nom en anglais (black, par exemple), sous forme hexadécimale (#FFC8D3) 
+          ou en notation RGB (rgb(250,25,118)).</p>
+        <p>On peut ajouter une image de fond avec background-image. On peut choisir de fixer l'image de fond, de l'afficher en 
+        mosaïque ou non, et même de la positionner où on veut sur la page. On peut rendre une portion de la page transparente avec 
+        la propriété opacity ou avec la notation RGBa (identique à la notation RGB, avec une quatrième valeur indiquant le niveau de transparence).</p>
+     
+     <h3> 12-3- Les bordures </h3>
+       <p>On peut appliquer une bordure à un élément avec la propriété border. Il faut indiquer la largeur de la bordure, 
+       sa couleur et son type (trait continu, pointillés…).</p>
+        <p> On peut arrondir les bordures avec border-radius. 
+        <p>On peut ajouter une ombre aux blocs de texte avec box-shadow. </p>
+        <p>On doit indiquer le décalage vertical et horizontal de l'ombre, son niveau d'adoucissement et sa couleur.
+          Le texte peut lui aussi avoir une ombre avec text-shadow.</p>
+          
+    <h3> 12-4- Les balises </h3>
+       <p>On peut modifier la taille d'une balise de type block avec les propriétés CSSwidth(largeur) etheight(hauteur).</p>
+       <p>On peut définir des minima et maxima autorisés pour la largeur et la hauteur :min-width,max-width,min-height,max-height.</p>
+       <p>Les éléments de la page disposent chacun de marges intérieures (padding) et extérieures (margin).</p>
+       <p>S'il y a trop de texte à l'intérieur d'un bloc de dimensions fixes, il y a un risque de débordement. 
+       Dans ce cas, il peut être judicieux de rajouter des barres de défilement avec la propriété overflow ou de forcer la césure avec word-wrap.</p>
+
+    <h3> 12-5- Flexbox </h3>
+      <p>Il existe plusieurs techniques pour positionner les blocs sur la page. Flexbox est la technique la plus récente et de loin la plus puissante,
+      que je vous recommande d'utiliser.</p>
+      <p>Le principe de Flexbox est d'avoir un conteneur, avec plusieurs éléments à l'intérieur. </p>
+      <p>Avec display: flex; sur le conteneur, les éléments à l'intérieur sont agencés en mode Flexbox (horizontalement par défaut).</p>
+      <p>Flexbox peut gérer toutes les directions. Avec flex-direction, on peut indiquer si les éléments sont agencés horizontalement 
+      (par  défaut) ou verticalement. Cela définit ce qu'on appelle l'axe principal.</p>
+      <p>L'alignement des éléments se fait sur l'axe principal avec justify-content , et sur l'axe secondaire avec align-items. Avec flex-wrap, 
+      on peut autoriser les éléments à revenir à la ligne s'ils n'ont plus d'espace.S'il y a plusieurs lignes, on peut indiquer comment les lignes
+      doivent se répartir entre elles avec align-content. </p>
+      <p>Chaque élément peut être réagencé en CSS avec order (pas besoin de toucher au code HTML !). Avec la super-propriété flex, 
+      on peut autoriser nos éléments à occuper plus ou moins d'espace restant.</p>
+    
+    <h3> 12-6- Les selecteurs </h3>
         <p> Les selecteurs servent à appeler les éléments qui doivent être impactés par les informations du CSS. Ces selecteurs peuvent être des classes, des id,...
         Ces sélecteurs permmettent de spécifier des endroits spécifiques sur lesquels le CSS va agir. Dans le cas d'une class il faudra que le nom de la classe soit
         précéder d'un point ".". Dans le cas d'un id, il faudra un "#".</p>
@@ -343,10 +405,10 @@
           <li> Le selecteur universel "*". <p> Il permet d'appliquer les informations du CSS à l'ensemble du HTML.</p></li>
           </ul>
     
-      <h3>14-1- Titre 3</h3>
-        <h4>14-1-1- Titre 4</h4>
-          <h5>14-1-1-1- Titre 5</h5>
-            <h6>14-1-1-1-1- Titre 6</h6></section>
+      <h3>13-1- Titre 3</h3>
+        <h4>13-1-1- Titre 4</h4>
+          <h5>13-1-1-1- Titre 5</h5>
+            <h6>13-1-1-1-1- Titre 6</h6></section>
   </div>
 
   <header class="header"> 
@@ -387,9 +449,6 @@
     </li>
     <li> 
       <a href="#image">Integration de l'image</a> 
-    </li>
-    <li> 
-      <a href="#formulaire">Formulaire</a> 
     </li>
     <li> 
       <a href="#tableau">Tableau</a> 
@@ -433,9 +492,6 @@
     </li>
     <li> 
       <a href="#image">Integration de l'image</a> 
-    </li>
-    <li> 
-      <a href="#formulaire">Formulaire</a> 
     </li>
     <li> 
       <a href="#tableau">Tableau</a> 
