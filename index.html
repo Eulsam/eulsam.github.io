@@ -8,8 +8,8 @@
 
 <body class = "fond">
 
- <div class ="sections">
- <section class="section">
+  <div class ="sections">
+    <section class="section">
     <h2 id="quoi"> 1- C'est quoi HTML et CSS?</h2>
       <ul> 
         <li>HTML (HyperText Markup Language) :    a fait son apparition dès 1991 lors du lancement du Web. 
@@ -172,17 +172,17 @@
       <p> &lt;header&gt; &lt;/header&gt; positionnement en haut de page</p>
       <p> &lt;nav&gt; &lt;/nav&gt; positionnement a gauche de la page</p>
 </section>
- <section class="section">
+    <section class="section">
   <p> &lt;footer&gt; &lt;/footer&gt; positionnement en bas de la page</p>
   <p> &lt;section&gt; &lt;/section&gt; positionnement au centre de la page</p>
   <p> &lt;aside&gt; &lt;/aside&gt; positionnement au droite de la page</p>
 </section>
-<section class="section">
+    <section class="section">
   <p> &lt;footer&gt; &lt;/footer&gt; positionnement en bas de la page</p>
       
   <h2 id="image">10 Integration d'image</h2>
 
-  <p>Pour integrer une image,la balise est de type orpheline <img />
+  <p>Pour integrer une image,la balise est de type orpheline &lt;img /&gt;
       La balise doit être accompagnée de deux attributs obligatoires :
       src= : il permet d'indiquer où se trouve l'image que l'on veut insérer. Vous pouvez soit mettre un chemin absolu (ex. :  http://www.site.com/fleur.png), soit mettre le chemin en relatif (ce qu'on fait le plus souvent). Ainsi, si votre image est dans un sous-dossier  images, vous devrez taper :  src="images/fleur.png"
       alt= : cela signifie « texte alternatif ». On doit toujours indiquer un texte alternatif à l'image, c'est-à-dire un court texte qui décrit ce que contient l'image. Ce texte sera affiché à la place de l'image si celle-ci ne peut pas être téléchargée (cela arrive), ou dans les navigateurs de personnes handicapées (non-voyants) qui ne peuvent malheureusement pas « voir » l'image. Cela aide aussi les robots des moteurs de recherche pour les recherches d'images. Pour la fleur, on mettrait par exemple :  alt="Une fleur".
@@ -190,15 +190,21 @@
       L'attribut permettant d'afficher une bulle d'aide est le même que pour les liens : il s'agit de  title.
   </p> 
   <p>Voici un exemple d'insertion d'image :
-      &lt;img src="hockey.jpg" alt="Photo de hockey subaquatique" title="Photo de hockey subaquatique"/&gt;
+      &lt;img src="scottyapprouved.jpg" alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/&gt;
   </p>
   <p>Pour mettre un titre en dessous de l'image on la fait apparaitre comme une figure avec les balises &lt;figure &gt; et &lt;figcaption &gt;
   </p>
        
   <figure>
-    <img src="hockey.jpg" alt="Photo de hockey subaquatique" title="Photo de hockey subaquatique"/>
-    <figcaption>Photo de hockey subaquatique</figcaption>
+    <img src="scottyapprouved.jpg" alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
+    <figcaption>Scotty est OK avec ça!</figcaption>
   </figure> 
+  
+  <ul>Il existe plusieurs formats d'images adaptées au Web :
+    <li>JPEG : pour les photos ;</li>
+    <li>PNG : pour toutes les autres illustrations ;</li>
+    <li>GIF : similaire au PNG, plus limité en nombre de couleurs mais qui peut être animé.</li>
+  </ul>
   
   <h2 id="formulaire">11- Formulaires</h2>
   
@@ -318,64 +324,80 @@
         
   <h2 id="css">13- Notions de base de CSS </h2>
     
-    
+    <h3 id="selecteur"> 13-1- Les selecteurs </h3>
+        <p> Les selecteurs servent à appeler les éléments qui doivent être impactés par les informations du CSS. Ces selecteurs peuvent être des classes, des id,...
+        Ces sélecteurs permmettent de spécifier des endroits spécifiques sur lesquels le CSS va agir. Dans le cas d'une class il faudra que le nom de la classe soit
+        précéder d'un point ".". Dans le cas d'un id, il faudra un "#".</p>
+        
+        <p>Il est possible de combiner plusieurs selecteurs, via différents opérateurs : </p>
+        <ul>
+          <li> le selecteur de voisin immédiat "+". <p>Un exemple sera plus parlant. Si nous observons l'expression : dl+dl, cela signifie que toute définition suivie d'une autre définition
+          sera impactée par les instructions du CSS. Si une définition est suivie par autre chose, les instructions ne se réaliseront pas.</p></li>
+          <li> le selecteur de voisin indirect "~". <p>Prenons l'exemple suivant img~a. Le symbol ~ indique le selecteur. Cela indique que les instructions du CSS vont
+          s'appliquer aux enfants "a" de l'img quelque soit sa position au sein de la même balise et du même niveau.</p></li>
+          <li> Le selecteur de descendant "&gt;". <p>Comme son nom l'indique, les effets de l'instruction CSS sont reportés sur le niveau inférieur.Prenons l'exemple de la liste de définition.
+          si en selecteur nous indiquaons dl&gt;div;. Cela indique que le dl est le parent et le div l'enfant, autrement dit tout les div qui sont des descendants directs de dl
+          seront impactés par les instructions du CSS.</p></li>
+          <li> Le selecteur de descendant à échelons différents. <p>Prenons un exemple : div p. Nous pouvons remarquer que l'opérateur indiquant la descendance est un espace. Cela
+          implique que tout les paragraphes "p" du parent "div" seront affetés par les instructions du CSS.</p></li>
+          <li> Le selecteur universel "*". <p> Il permet d'appliquer les informations du CSS à l'ensemble du HTML.</p></li>
+          </ul>
     
       <h3>14-1- Titre 3</h3>
         <h4>14-1-1- Titre 4</h4>
           <h5>14-1-1-1- Titre 5</h5>
             <h6>14-1-1-1-1- Titre 6</h6></section>
- </div>
+  </div>
 
   <header class="header"> 
-    <p id="haut_de_la_page"> Bonjour et bienvenue!
-    </p><!-- en head de la page -->
-    <h1>Le cours de HTML et CSS vu par Eulsam</h1>
+    <p id="haut_de_la_page"> <strong>Le cours de HTML et CSS vu par Eulsam</strong></p><!-- en head de la page -->
+    
   </header>
     
   
       
 <nav class="nav"> <h2>Sommaire :</h2>
-  <ul><!-- en nav de la page (gauche)-->
+  <ol><!-- en nav de la page (gauche)-->
     <li> 
-      <a href="#quoi">1- C'est quoi HTML et CSS?</a> 
+      <a href="#quoi">C'est quoi HTML et CSS?</a> 
     </li>
     <li> 
-      <a href="#faire">2- Faire un site</a> 
+      <a href="#faire">Faire un site</a> 
     </li>
     <li> 
-      <a href="#structure_type">3- Structure type d'un fichier HTML</a> 
+      <a href="#structure_type">Structure type d'un fichier HTML</a> 
     </li>
     <li> 
-      <a href="#utilitaire">4- Les utilitaires</a> 
+      <a href="#utilitaire">Les utilitaires</a> 
     </li>
     <li>
-      <a href="#citation">5- Citations</a> 
+      <a href="#citation">Citations</a> 
     </li>
     <li> 
-      <a href="#liste">6- Listes</a> 
+      <a href="#liste">Listes</a> 
     </li>
     <li> 
-      <a href="#echappement">7- Echappement</a> 
+      <a href="#echappement">Echappement</a> 
     </li>
     <li>
-      <a href="#liens">8- Liens</a> 
+      <a href="#liens">Liens</a> 
     </li>
     <li>
-      <a href="#position">9- Position sur la page</a> 
+      <a href="#position">Position sur la page</a> 
     </li>
     <li> 
-      <a href="#image">10- Integration de l'image</a> 
+      <a href="#image">Integration de l'image</a> 
     </li>
     <li> 
-      <a href="#formulaire">11- Formulaire</a> 
+      <a href="#formulaire">Formulaire</a> 
     </li>
     <li> 
-      <a href="#tableau">12- Tableau</a> 
+      <a href="#tableau">Tableau</a> 
     </li>
     <li> 
-      <a href="#css">13- Notion de bases de CSS</a> 
+      <a href="#css">Notion de bases de CSS</a> 
     </li>
-  </ul>
+  </ol>
 </nav>
         
 
@@ -425,7 +447,12 @@
 </aside>
 
 
-            
+
+<img class = "bandeau" src="bandeau.png" alt="bandeau" title="bandeau"/>
+<img class = "image" src="scottyapprouved.jpg" alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
+    
+ 
+         
 <footer class="footer"> 
   <!-- en footer de la page -->
   <p>
@@ -434,5 +461,6 @@
   </p>
   <h4>Merci Jean-Francois JUNG.</h4>
 </footer> 
+
 </body>
 </html>

@@ -1,6 +1,9 @@
-.sections{/* Carre */
+.sections{/*  */
+  display: flex;
+  align-items:stretch;
+  border: 5px black double;
   width: 900px;
-  height: 550px;
+  height: 500px;
   display : block;
   text-align: left;
   font-size: 16px;
@@ -9,25 +12,30 @@
   color : black;
   background-color : GreenYellow;
   position: absolute; 
-  top : 150px;
-  left: 300px; 
-  overflow : scroll;
+  top : 200px;
+  left: 320px; 
+  overflow-y: scroll;
+  verflow-x: hidden;
 }
-.header{/* Carre */
+.header{/*  */
+   
   width: auto;
   height: auto;
+  font-family: Old English Text MT;
+  border: 5px black double;
   text-align: center;
-  font-size: 16px;
+  font-size:70px;
   padding-top: 20px;
   border-radius: 10px;
   color : black;
   background-color : DeepPink;
 }
 
-.aside{/* Carre */
+.aside{/*  */
   
-  width: 280px;
+  width: auto;
   height: auto;
+  border: 5px black double;
   text-align: left;
   font-size: 16px;
   padding-top: 20px;
@@ -35,23 +43,25 @@
   color : black;
   background-color : Tomato; 
   position: absolute; 
-  top : 150px;
-  left: 1210px; 
+  top : 200px;
+  left: 1260px; 
 }
-.nav{/* Carre */
+.nav{/*  */
+  border: 5px black double;
   width: 280px;
   height: auto;
   text-align: left;
-  font-size: 16px;
+  font-size: 1.3 em;
   padding-top: 20px;
   border-radius: 5px;
   color : black;
   background-color : MistyRose; 
   position: absolute; 
-  top : 150px;
+  top : 200px;
   
 }
-.footer{/* Carre */
+.footer{/*  */
+  border: 5px black double;
   width: 1503;
   height: auto;
   text-align: center;
@@ -64,6 +74,22 @@
   top : 620px;
   left: 1280px; 
 }
+.image{
+  width: 200px;
+	height: auto;
+  position: absolute; 
+  top : 560px;
+  left: 20px; 
+}
+.bandeau{
+  background-size: cover;
+  width: 1450px;
+  height: 80px;
+  position:absolute; 
+  top : 20px;
+  right: 40px; 
+}
+
 .fond{/* Carre */
   
   background-color : LightSlateGray;
