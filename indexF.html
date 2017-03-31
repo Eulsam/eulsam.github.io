@@ -21,6 +21,7 @@
 <nav class="nav2"> 
    
 <nav class="nav"> <h2>Sommaire :</h2>
+
   <ol><!-- en nav de la page (gauche)-->
     <li> 
       <a href="#quoi">C'est quoi HTML et CSS?</a> 
@@ -59,9 +60,12 @@
       <a href="#css">Notion de bases de CSS</a> 
     </li>
   </ol>
+
   </nav>
-<img class = "image" src="scottyapprouved.jpg" 
+  
+<img class = "image" src="Scottyapprouved.jpg" 
 alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
+
 </nav>
 
 <div class ="sections">
@@ -252,7 +256,7 @@ alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
   </p>
        
   <figure>
-    <img src="scottyapprouved.jpg" alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
+    <img src="Scottyapprouved.jpg" alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
     <figcaption>Scotty est OK avec ça!</figcaption>
   </figure> 
   
@@ -417,7 +421,7 @@ alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
      <h3> 12-3- Les bordures </h3>
        <p>On peut appliquer une bordure à un élément avec la propriété border. Il faut indiquer la largeur de la bordure, 
        sa couleur et son type (trait continu, pointillés…).</p>
-        <p> On peut arrondir les bordures avec border-radius. 
+        <p> On peut arrondir les bordures avec border-radius. </p>
         <p>On peut ajouter une ombre aux blocs de texte avec box-shadow. </p>
         <p>On doit indiquer le décalage vertical et horizontal de l'ombre, son niveau d'adoucissement et sa couleur.
           Le texte peut lui aussi avoir une ombre avec text-shadow.</p>
@@ -530,45 +534,32 @@ alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
 
         
 <div class="aside2">    
-<aside class="aside"> <h2>Dans cet article</h2>
-  <ul><!-- en aside de la page (droite) -->
-    <li>
-      <a href="#quoi">C'est quoi HTML et CSS?</a> 
-    </li>
-    <li> 
-      <a href="#faire">Faire un site</a> 
-    </li>
-    <li> 
-      <a href="#structure_type">Structure type d'un fichier HTML</a> 
-    </li>
-    <li> 
-      <a href="#utilitaire">Les utilitaires</a> 
-    </li>
-    <li> 
-      <a href="#citation">Citations</a> 
-    </li>
-    <li> 
-      <a href="#liste">Listes</a> 
-    </li>
-    <li> 
-      <a href="#echappement">Echappement</a> 
-    </li>
-    <li> 
-      <a href="#liens">Liens</a> 
-    </li>
-    <li> 
-      <a href="#position">Position sur la page</a> 
-    </li>
-    <li> 
-      <a href="#image">Integration de l'image</a> 
-    </li>
-    <li> 
-      <a href="#tableau">Tableau</a> 
-    </li>
-    <li> 
-      <a href="#css">Notion de bases de CSS</a> 
-    </li>
-   </ul>
+<aside class="aside"> <h2>Contact :</h2>
+      <form action="" methode="post">
+      
+      <label for="name"> Votre nom :</label>
+      <input type="text" name="user_name" id="name"/>
+
+      <label for="e-mail">
+        <p>E-mail:</p>
+      </label>
+        <input type="mail" name="user_mail" id="e-mail"/>
+           
+      <p>Vous souhaitez un rendez-vous?</p>
+      <input type="date" /><br />
+            
+      <label for="commentaires :">
+        <p>Commentaires</p>
+      </label>
+      <textarea type="text" name="user_commentaire" id="commentaires">
+      </textarea>
+      <button type="submit"> 
+      ENVOYER
+      </button>
+   <p>
+    <a href='formulaire.html'> Votre avis m'intéresse! 
+    </a>
+   </p>
   </aside>
   <footer class="footer"> 
   <!-- en footer de la page -->   

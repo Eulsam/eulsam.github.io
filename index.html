@@ -11,15 +11,15 @@
   <div class ="sections">
     <section class="section">
       <p>
-        <a href='indexf.html'> Attention une version de ce travail est disponible ici avec l'utilisation de FlexBox.
+        <a href='indexF.html'> Attention une version de ce travail est disponible ici avec l'utilisation de FlexBox.
         </a> 
       </p>
     <h2 id="quoi"> 1- C'est quoi HTML et CSS?</h2>
       <ul> 
         <li>HTML (HyperText Markup Language) :  il  a fait son apparition dès 1991 lors du lancement du Web. 
            Son rôle est de gérer et organiser le contenu. C'est donc en HTML que vous écrirez ce qui doit être affiché sur la page :
-           du texte, des liens, des images… Vous direz par exemple : « Ceci est mon titre, ceci est mon menu, voici le texte principal de la page, 
-            voici une image à afficher, etc. ».  
+           du texte, des liens, des images… Vous direz par exemple : «Ceci est mon titre, ceci est mon menu, voici le texte principal de la page, 
+            voici une image à afficher, etc.».  
          </li>
          <li>CSS (Cascading Style Sheets, aussi appelées Feu  les de style) : le rôle du CSS est de gérer 
             l'apparence de la page web (agencement, positionnement, décoration, couleurs, taille du texte…).
@@ -200,9 +200,9 @@
       </p>
       <p>Pour mettre un titre en dessous de l'image on la fait apparaitre comme une figure avec les balises &lt;figure &gt; et &lt;figcaption &gt;
       </p>
-       
+      
   <figure>
-    <img src="scottyapprouved.jpg" alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
+    <img src="Scottyapprouved.jpg" alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
     <figcaption>Scotty est OK avec ça!</figcaption>
   </figure> 
   
@@ -399,10 +399,7 @@
        <a href='indexf.html'> lien vers le même site mais organisé par un css utilisant FlexBox 
        </a> 
       </p>
-      <p>
-        <a href='https://css-tricks.com/snippets/css/a-guide-to-flexbox/'> lien vers la documentation sur FlexBox.
-        </a> 
-      </p>
+      
     
     <h3> 12-6- Les selecteurs </h3>
         <p> Les selecteurs servent à appeler les éléments qui doivent être impactés par les informations du CSS. Ces selecteurs peuvent être des classes, des id,...
@@ -447,7 +444,7 @@
            ::first-line permettra de ne cibler que la première ligne d'un élément visé 
            par le sélecteur.</p>
            
-         <h4> 12-7-2- Exemple </h4> 
+         <h4> 12-7-3- Exemple </h4> 
            <p>
             <a href='exopseudo.html'> lien vers l'exemple vu en cours.
             </a> 
@@ -473,11 +470,11 @@
          On peut rendre un champ obligatoire avec l'attribut required, faire en sorte qu'il soit sélectionné par défaut avec autofocus,
          donner une indication dans le champ avec placeholder…</p>
          <p>Pour récupérer ce que les visiteurs ont saisi, le langage HTML ne suffit pas. 
-         Il faut utiliser un langage « serveur » comme PHP… Si vous voulez aller plus loin, il va donc falloir apprendre un nouveau langage !</p>
+         Il faut utiliser un langage « serveur » comme PHP… </p>
          <p>
-          <a href='formulaire.html'> Exemple: votre avis m'intéresse! 
-          </a>
-        </p>
+           <a href='formulaire.html'> Exemple: votre avis m'intéresse! 
+           </a>
+         </p>
 
           
 
@@ -485,6 +482,7 @@
         <h4>13-1-1- Titre 4</h4>
           <h5>13-1-1-1- Titre 5</h5>
             <h6>13-1-1-1-1- Titre 6</h6></section>
+  </section>
   </div>
 
   <header class="header"> 
@@ -536,60 +534,46 @@
         
 
       
-<aside class="aside"> <h2>Dans cet article</h2>
-  <ul><!-- en aside de la page (droite) -->
-    <li>
-      <a href="#quoi">C'est quoi HTML et CSS?</a> 
-    </li>
-    <li> 
-      <a href="#faire">Faire un site</a> 
-    </li>
-    <li> 
-      <a href="#structure_type">Structure type d'un fichier HTML</a> 
-    </li>
-    <li> 
-      <a href="#utilitaire">Les utilitaires</a> 
-    </li>
-    <li> 
-      <a href="#citation">Citations</a> 
-    </li>
-    <li> 
-      <a href="#liste">Listes</a> 
-    </li>
-    <li> 
-      <a href="#echappement">Echappement</a> 
-    </li>
-    <li> 
-      <a href="#liens">Liens</a> 
-    </li>
-    <li> 
-      <a href="#position">Position sur la page</a> 
-    </li>
-    <li> 
-      <a href="#image">Integration de l'image</a> 
-    </li>
-    <li> 
-      <a href="#tableau">Tableau</a> 
-    </li>
-    <li> 
-      <a href="#css">Notion de bases de CSS</a> 
-    </li>
-  </ul>
+<aside class="aside"> <h2>Contact :</h2>
+      <form action="" methode="post">
+      
+      <label for="name"> Votre nom :</label>
+      <input type="text" name="user_name" id="name"/>
+
+      <label for="e-mail">
+        <p>E-mail:</p>
+      </label>
+        <input type="mail" name="user_mail" id="e-mail"/>
+           
+      <p>Vous souhaitez un rendez-vous?</p>
+      <input type="date" /><br />
+            
+      <label for="commentaires :">
+        <p>Commentaires</p>
+      </label>
+      <textarea type="text" name="user_commentaire" id="commentaires">
+      </textarea>
+      <button type="submit"> 
+      ENVOYER
+      </button>
+           
+    </form>
+    <p>
+      <a href='formulaire.html'> Votre avis m'intéresse! 
+      </a>
+    </p>
 </aside>
 
 
 
 <img class = "bandeau" src="bandeau.png" alt="bandeau" title="bandeau"/>
+
 <img class = "image" src="scottyapprouved.jpg" alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
     
  
          
 <footer class="footer"> 
   <!-- en footer de la page -->
-  <p>
-    <!-- <a href="#haut_de_la_page"> Retour en haut de la page.-->
-    </a> 
-  </p>
   <h4>Merci Jean-Francois JUNG.</h4>
 </footer> 
 
