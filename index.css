@@ -16,8 +16,9 @@
   top : 200px;
   left: 320px; 
   overflow-y: scroll;
-  overflow-x: hidden;
+overflow-x: hidden;
 }
+
 .header{/*  */
    
   width: auto;
@@ -76,15 +77,36 @@
   background-color : DarkOrchid;
   position: absolute; 
   top : 620px;
-  left: 1280px; 
+  left: 1280px;  
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
-.image{
+
+.footer:hover {
+  background-color: #FFCCCC;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.image{ 
   width: 200px;
 	height: auto;
   position: absolute; 
   top : 560px;
-  left: 20px; 
+  left: 20px;
+  opacity:1;
+ }  
+
+.image:hover
+{
+        opacity:0.5;
 }
+ 
+
+
+
 .bandeau{
   background-size: cover;
   width: 1450px;

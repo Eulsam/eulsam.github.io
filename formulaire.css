@@ -10,7 +10,6 @@
   background: deepPink;
   order: 1;
   width: 100%;
-  
   text-align: center;
   font-size:2em;
 }
@@ -21,13 +20,27 @@
   flex-direction:row;  
   text-align: center;
   order: 2;
+  background: lightpink;
+   width: 100%;
  
 }
-.box{
-  background-color : #ff0000;
-   order: 3;
- }
-
-.box:hover{
-  background-color : #00ff00;
+.form{  
+  
+  display: flex;  
+  flex-direction:row;  
+  text-align: center;
+  order: 2;
+  background: lightpink;
+   width: 100%;
+ 
+}
+.image{  
+  
+  display: flex;  
+  flex-direction:row;  
+  text-align: center;
+  order: 2;
+  background: lightpink;
+   width: 100%;
+ 
 }
