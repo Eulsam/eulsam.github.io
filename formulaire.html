@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head> <!-- titre -->
+  <meta charset="utf-8"/> <!-- unicode balise meta -->
+  <title>formulaire</title> <!-- -->
+   <link href ="reset.css"/><!--reset de tous les display du browser -->
+  <link rel="stylesheet" type="text/css" href="formualaire.css"/>
+</head>
+  <body>
+    
+    <form action="" methode="post">
+      <p>C'est le moment de donner son avis.</p>
+      <label for="name"> Votre nom :</label>
+      <input type="text" name="user_name" id="name"/>
+
+      <label for="e-mail">
+        <p>E-mail:</p>
+      </label>
+        <input type="mail" name="user_mail" id="e-mail"/>
+      <p>
+       Cochez les actions que vous aimeriez entreprendre:<br />
+       <input type="checkbox" name="sortir" id="sortir" /> 
+       <label for="sortir">Sortir</label><br />
+       <input type="checkbox" name="courir" id="courir" /> 
+       <label for="courir">Courir dehors</label><br />
+       <input type="checkbox" name="manger" id="manger" /> 
+       <label for="manger">Manger</label><br />
+       <input type="checkbox" name="dormir" id="dormir" /> 
+       <label for="dormir">Dormir</label>
+      </p>
+      
+      <fieldset>
+      <legend> Groupe de puces </legend>
+      <p>
+       Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+       <input type="radio" name="age" value="moins15" id="moins15" /> 
+       <label for="moins15">Moins de 15 ans</label><br />
+       <input type="radio" name="age" value="medium15-25" id="medium15-25" /> 
+       <label for="medium15-25">15-25 ans</label><br />
+       <input type="radio" name="age" value="medium25-40" id="medium25-40" /> 
+       <label for="medium25-40">25-40 ans</label><br />
+       <input type="radio" name="age" value="plus40" id="plus40" /> 
+       <label for="plus40">Encore plus vieux que ça ?!</label>
+      </p>
+      </fieldset>
+      <p>
+        <label for="moyen_de_tranport">Quel est votre moyen de transport ?</label><br />
+        <select name="moyen_de_tranport" id="moyen_de_tranport">
+           <optgroup label="Motorise">
+            <option value="1">Voiture</option>
+            <option value="4">Bus</option>
+            <option value="5">Bateau</option>
+            <option value="6">Avion</option>
+            <option value="7">Camion</option>
+           </optgroup>
+           <optgroup label="Propulsion humaine">
+            <option value="2">Vélo</option>
+            <option value="3">Merche à pied</option>
+            <option value="8">Trottinette</option>
+           </optgroup>
+           
+           
+       </select>
+      </p>
+      
+      <p>
+        <label for="moyen_de_tranport">Quels sont vos moyens de transport habituel?</label><br />
+        <select multiple="true" name="moyen_de_tranport" id="moyen_de_tranport">
+           <optgroup label="Motorise">
+            <option value="1">Voiture</option>
+            <option value="4">Bus</option>
+            <option value="5">Bateau</option>
+            <option value="6">Avion</option>
+            <option value="7">Camion</option>
+           </optgroup>
+           <optgroup label="Propulsion humaine">
+            <option value="2">Vélo</option>
+            <option value="3">Merche à pied</option>
+            <option value="8">Trottinette</option>
+           </optgroup>
+       </select>
+      </p>
+     
+      <p>Vous souhaitez un rendez-vous?</p>
+      <input type="date" /><br />
+      
+      <label for="content"> Alors content?(vous devez repondre OBLIGATOIREMENT!):</label>
+      <input type="text" name="user_content" id="content" maxlength="120" required/><br />
+      
+      
+      
+      <label for="commentaires">
+        <p>Commentaires</p>
+      </label>
+      <textarea type="text" name="user_commentaire" id="commentaires">
+      </textarea>
+      <button type="reset"> 
+      Effacer
+      </button> 
+      <button type="submit"> 
+      ENVOYER
+      </button>
+          
+     <p>Merci!</p>   
+    </form>  
+  </body>
+</html>

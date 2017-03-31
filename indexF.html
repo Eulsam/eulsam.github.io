@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head> <!-- titre -->
   <meta charset="utf-8"/> <!-- unicode balise meta -->
   <title>Page cours HTML</title> <!-- -->
@@ -12,7 +13,7 @@
 <img class = "bandeau" src="bandeau.png" alt="bandeau" title="bandeau"/>
 
 <header class="header"> 
-    <p id="haut_de_la_page"> <strong>Le cours de HTML et CSS vu par Eulsam</strong></p><!-- en head de la page -->  
+    <p id="haut_de_la_page"> <strong>Le cours de HTML et CSS vu par Eulsam avec FlexBox</strong></p><!-- en head de la page -->  
 </header>
 
 <div class ="corp">
@@ -59,8 +60,9 @@
     </li>
   </ol>
   </nav>
-<img class = "image" src="scottyapprouved.jpg" alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
-</nav2>
+<img class = "image" src="scottyapprouved.jpg" 
+alt="Scotty est OK avec ça!" title="Scotty est OK avec ça!"/>
+</nav>
 
 <div class ="sections">
 <section class="section">
@@ -165,7 +167,7 @@
       <h3>8-1- Nomenclature</h3>
         <p>&lt;a href='lien.html'&gt; lien vers l'autre fichier &lt;/a&gt;</p>
         <p>
-          <a href='lien.html'> lien vers l autre fichier 
+          <a href='formulaire.html'> votre avis m'intéresse! 
           </a> 
         </p>
         <p>
@@ -439,6 +441,10 @@
       doivent se répartir entre elles avec align-content. </p>
       <p>Chaque élément peut être réagencé en CSS avec order (pas besoin de toucher au code HTML !). Avec la super-propriété flex, 
       on peut autoriser nos éléments à occuper plus ou moins d'espace restant.</p>
+      <p>
+        <a href='https://css-tricks.com/snippets/css/a-guide-to-flexbox/'> lien vers la documentation sur FlexBox.
+        </a> 
+      </p>
     
     <h3> 12-6- Les selecteurs </h3>
         <p> Les selecteurs servent à appeler les éléments qui doivent être impactés par les informations du CSS. Ces selecteurs peuvent être des classes, des id,...
@@ -458,17 +464,72 @@
           implique que tout les paragraphes "p" du parent "div" seront affetés par les instructions du CSS.</p></li>
           <li> Le selecteur universel "*". <p> Il permet d'appliquer les informations du CSS à l'ensemble du HTML.</p></li>
           </ul>
+          
+      <h3> 12-7- Pseudo-classes et pseudo-élements </h3>    
+          
+        <h4> 12-7-1- Pseudo-classes </h4>
+        
+          <p>Une pseudo-classe est un mot-clé qui peut être ajouté aux sélecteurs afin 
+          d'indiquer l'état spécifique dans lequel l'élément doit être pour être ciblé par
+          la déclaration. La pseudo-classe :hover, par exemple, permettra d'appliquer une
+          mise en forme spécifique lorsque l'utilisateur survole l'élément ciblé par le 
+          sélecteur.</p>
+
+          <p>Les pseudo-classes et les pseudo-éléments permettent d'appliquer un 
+          style à un élément non seulement en fonction de son contenu dans l'arbre du 
+          document mais aussi en fonction de facteurs externes (l'historique de navigation 
+          par exemple avec :visited ; le statut du contenu avec :checked ; la position de la 
+          souris :hover).</p>
+     
+         <h4> 12-7-2- Pseudo-elements </h4>
+          
+           <p>De la même façon que les pseudo-classes, les pseudo-éléments sont ajoutés aux
+           sélecteur pour décrire un état spécial. Ils permettent ainsi de mettre en forme
+           certaines parties du document ou de l'élément. Ainsi, le pseudo-élément
+           ::first-line permettra de ne cibler que la première ligne d'un élément visé 
+           par le sélecteur.</p>
+           
+         <h4> 12-7-2- Exemple </h4> 
+           <p>
+            <a href='exopseudo.html'> lien vers l'exemple vu en cours.
+            </a> 
+           </p>
+           
+       <h3> 12-8- Les formulaires </h3>
+       
+        <p>Un formulaire est une zone interactive de la page, dans laquelle vos visiteurs
+        peuvent saisir des informations.
+        On délimite un formulaire avec la balise &lt;form&gt;à laquelle il faut ajouter 
+        deux attributs : method (mode d'envoi des données) et action (page vers laquelle
+        le visiteur sera redirigé après envoi du formulaire et qui traitera les informations).</p>
+       
+         <p>Une grande partie des éléments du formulaire peut s'insérer avec la balise &lt;input/&gt;.
+         La valeur de son attribut type permet d'indiquer quel type de champ doit
+         être inséré :</p>
+         <p>text : zone de texte ;</p>
+         <p>password : zone de texte pour mot de passe ;</p>
+         <p>tel : numéro de téléphone ;</p>
+         <p>checkbox : case à cocher ;etc.</p>
+         <p>La balise &lt;label&gt; permet d'écrire un libellé. On l'associe à un champ de formulaire avec l'attribut for,
+         qui doit avoir la même valeur que l'id du champ de formulaire.
+         On peut rendre un champ obligatoire avec l'attribut required, faire en sorte qu'il soit sélectionné par défaut avec autofocus,
+         donner une indication dans le champ avec placeholder…</p>
+         <p>Pour récupérer ce que les visiteurs ont saisi, le langage HTML ne suffit pas. 
+         Il faut utiliser un langage « serveur » comme PHP… Si vous voulez aller plus loin, il va donc falloir apprendre un nouveau langage !</p>
+         <p>
+            <a href='formulaire.html'> Exemple: votre avis m'intéresse! 
+            </a>
+         </p>
     
       <h3>13-1- Titre 3</h3>
         <h4>13-1-1- Titre 4</h4>
           <h5>13-1-1-1- Titre 5</h5>
-            <h6>13-1-1-1-1- Titre 6</h6></section>
+            <h6>13-1-1-1-1- Titre 6</h6>
+   </section>
 </div>
-</div>
-
 
         
-<aside class="aside2">    
+<div class="aside2">    
 <aside class="aside"> <h2>Dans cet article</h2>
   <ul><!-- en aside de la page (droite) -->
     <li>
@@ -507,14 +568,15 @@
     <li> 
       <a href="#css">Notion de bases de CSS</a> 
     </li>
-  </ul>
+   </ul>
+  </aside>
   <footer class="footer"> 
   <!-- en footer de la page -->   
     <h4>Merci Jean-Francois JUNG.</h4>
   </footer>
-</aside>
-</aside2>
+
 </div>
 
+</div>
 </body>
 </html>
